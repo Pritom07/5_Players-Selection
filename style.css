@@ -26,12 +26,13 @@ html {
 
 .real-madrid {
     position: relative;
-    bottom: 118%;
+    bottom: 120%;
     left: 85%;
 }
 
-.football {
+.trophy {
     position: relative;
-    left: 85%;
-    bottom: 98%;
+    bottom: 102%;
+    width: 18%;
+    left: 82%;
 }
