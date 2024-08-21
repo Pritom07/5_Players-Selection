@@ -15,3 +15,30 @@ function addUlElement(playerName, targetEvent) {
         return listcount;
     }
 }
+
+function playerPrice(priceArray) {
+    const priceCalculate = function (total, value) {
+        return total + value;
+    }
+    const price = priceArray.reduce(priceCalculate, 0);
+    return price;
+}
+
+function setText(elementId, value) {
+    const targetTag = document.getElementById(elementId);
+    targetTag.innerText = value;
+}
+
+function getText(elementId) {
+    const targetTag = document.getElementById(elementId);
+    const targetString = targetTag.innerText;
+    const targetValue = parseFloat(targetString);
+    return targetValue;
+}
+
+function getInputValue(elementId) {
+    const targetField = document.getElementById(elementId);
+    const targetFieldString = targetField.value;
+    const targetFieldvalue = parseFloat(targetFieldString);
+    return targetFieldvalue;
+}
