@@ -57,7 +57,8 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
         })
     }
     const totalPlayerSoldPrice = playerPrice(priceArray);
-    setText("playerPrice", totalPlayerSoldPrice);
+    const totalPlayerSoldPriceFixed = totalPlayerSoldPrice.toFixed(2);
+    setText("playerPrice", totalPlayerSoldPriceFixed);
 })
 
 document.getElementById("totalCalculate-btn").addEventListener("click", function () {
